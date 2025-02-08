@@ -1,1 +1,2 @@
 # ToDo
+This is a simple yet functional To-Do List application built using React. The app allows users to add, edit, and delete tasks, as well as mark them as completed or pending. It features a responsive design and supports filtering tasks by their status. The tasks are stored in the local storage, ensuring that your tasks persist even after refreshing the page. The app was developed over the course of two days as part of a personal project to practice React and improve front-end development skills.
