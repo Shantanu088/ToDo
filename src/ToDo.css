@@ -1,0 +1,236 @@
+/* .inputField {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+    align-items: center;
+    border-style:solid;
+    border-radius: 40px;
+    margin: 20px 400px 20px 400px;
+    background-color: #e7eaf6;;
+  }
+  
+  
+  .inputField input {
+    width: 20%; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .taskList{
+    border-style:solid;
+    border-radius: 40px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+  }
+
+  /* .taskList p{
+    margin-left: 8px;
+  } */
+/*
+  .task-completed {
+    background-color: #e7eaf6; 
+  }
+  
+  .task-pending {
+    background-color: #38598b; 
+  }
+
+  .layout {
+  min-height: 100vh;
+  background-color: #a2a8d3; 
+  justify-content: flex-start;
+} */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d0d8e8; /* Lighter, more visible blue background */
+  color: #333; /* Dark text color for contrast */
+  line-height: 1.6;
+}
+
+/* Layout Styling */
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d0d8e8; /* Updated background color for a more visible tone */
+  padding: 20px;
+  gap: 20px; /* Reduced gap for a more compact layout */
+}
+
+/* Input Field */
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Smaller gap */
+  align-items: center;
+  border: 1px solid #d1d8e3; /* Light border */
+  border-radius: 20px; /* Smaller border radius */
+  margin: 15px auto;
+  padding: 10px;
+  width: 260px; /* Smaller width */
+  background-color: #f0f0f0; /* Slightly darker gray for input field background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.inputField input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Smaller border radius for inputs */
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.inputField input:focus {
+  border-color: #38598b; /* Blue border on focus */
+  outline: none;
+}
+
+.inputField button {
+  background-color: #38598b; /* Green background for Submit button */
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.inputField button:hover {
+  background-color: #388e3c; /* Darker green shade for hover */
+}
+
+/* Task List */
+.taskList {
+  width: 260px;
+  padding: 10px;
+  margin: 8px auto;
+  border: 1px solid #d1d8e3;
+  border-radius: 20px; /* Smaller radius for task cards */
+  background-color: #f5f5f5; /* Light gray background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.taskList p {
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 14px; /* Slightly smaller text */
+}
+
+.taskEdit {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Smaller gap for task editing form */
+}
+
+.taskList button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #607d8b; /* Orange background for task action buttons */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.taskList input[type="checkbox"] {
+  margin-top: 6px;
+}
+
+.taskList button:hover {
+  background-color: #ede6e4; /* Darker shade for hover */
+  color: black;
+}
+
+/* Task Status Styling */
+.task-completed {
+  background-color: #81c784; /* Green background for completed tasks */
+  color: #fff;
+}
+
+.task-pending {
+  background-color: #ff7043; /* Orange background for pending tasks */
+  color: #fff;
+}
+
+/* Edit and Delete Buttons with updated colors */
+.taskList .edit-btn {
+  background-color: #607d8b; /* Grayish blue for Edit button */
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.taskList .edit-btn:hover {
+  background-color: #455a64; /* Darker grayish blue for hover effect */
+}
+
+.taskList .delete-btn {
+  background-color: #607d8b; /* Red for Delete button */
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.taskList .delete-btn:hover {
+  background-color: #e53935; /* Darker red for hover effect */
+}
+
+/* Filter Buttons */
+button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0e0e0; /* Lighter shade for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .inputField {
+    width: 90%; /* Full width for mobile devices */
+    margin: 15px 5%;
+  }
+
+  .taskList {
+    width: 90%;
+    margin: 10px 5%;
+  }
+
+  .layout {
+    gap: 15px;
+  }
+}
